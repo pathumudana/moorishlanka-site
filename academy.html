@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moorish Academy — Microsoft Security Certification Training</title>
+<meta name="description" content="SC-300, SC-900 and Security Bootcamp training from a four-time Microsoft Security MVP, with flexible payment via Koko.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="https://moorishlanka.com" class="brand">
+      <svg class="mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="12.5" stroke="#C08A28" stroke-width="1.4"/>
+        <circle cx="14" cy="9" r="2.4" fill="#142C54"/>
+        <circle cx="9" cy="18" r="2.4" fill="#142C54"/>
+        <circle cx="19" cy="18" r="2.4" fill="#142C54"/>
+        <path d="M14 9L9 18M14 9L19 18M9 18H19" stroke="#142C54" stroke-width="1.2"/>
+      </svg>
+      Moorish Academy
+    </a>
+    <div class="nav-links">
+      <a href="#courses">Courses</a>
+      <a href="#pay">Payment</a>
+      <a href="https://moorishlanka.com">Consulting ↗</a>
+    </div>
+    <a href="#courses" class="nav-cta">See courses</a>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:56px;">
+  <div class="wrap" style="grid-template-columns: 1fr;">
+    <div>
+      <div class="hero-kicker">Instructor: Pathum Udana, Microsoft Security MVP</div>
+      <h1 style="max-width:18ch;">Learn the Microsoft security stack from someone who runs it in production.</h1>
+      <p class="hero-lede">Live, Saturday-evening classes for SC-300 and SC-900, plus a hands-on Security Bootcamp covering SOC, IAM, GRC and AppSec.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn btn-primary">View course dates</a>
+        <a href="#pay" class="btn btn-ghost">Payment options</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Current courses</h2>
+      <p>All classes run live, Saturdays at 7:30 PM SLST. Recordings are shared with enrolled students.</p>
+    </div>
+    <div class="course-list">
+      <div class="course-row">
+        <h4>SC-300 — Identity &amp; Access Administrator</h4>
+        <span class="meta">Saturdays, 7:30 PM SLST</span>
+        <span class="meta">Entra ID, Conditional Access, Zero Trust</span>
+        <span class="price">LKR 30,000</span>
+      </div>
+      <div class="course-row">
+        <h4>SC-900 — Security, Compliance &amp; Identity Fundamentals</h4>
+        <span class="meta">Saturdays, 7:30 PM SLST</span>
+        <span class="meta">Foundational, no prerequisites</span>
+        <span class="price">LKR 30,000</span>
+      </div>
+      <div class="course-row">
+        <h4>Security Bootcamp</h4>
+        <span class="meta">Starts 10 October</span>
+        <span class="meta">SOC · IAM · GRC · AppSec pillars</span>
+        <span class="price">Contact for pricing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pay" class="section-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Pay in full, or split it with Koko</h2>
+      <p>Course fees can be paid up front, or spread across installments through Koko at checkout.</p>
+    </div>
+    <div class="pay-panel">
+      <div class="pay-col">
+        <h3>Pay in full</h3>
+        <p style="color:var(--text-mute);">One payment, confirmed enrolment immediately. Card and bank transfer accepted.</p>
+        <a href="#enroll" class="btn btn-primary" style="margin-top:8px;">Pay in full</a>
+      </div>
+      <div class="pay-col">
+        <div class="koko-mark">Pay with Koko</div>
+        <h3>Example: SC-300, LKR 30,000</h3>
+        <div class="installment-row"><span>Installment 1 — at enrolment</span><span>LKR 15,000</span></div>
+        <div class="installment-row"><span>Installment 2 — before final module</span><span>LKR 15,000</span></div>
+        <div class="installment-row"><span>Total</span><span>LKR 30,000</span></div>
+        <a href="#enroll" class="btn btn-ghost" style="margin-top:14px;">Enrol with Koko</a>
+      </div>
+    </div>
+    <p style="margin-top:18px; font-size:13.5px; color:var(--text-on-dark-mute); max-width:70ch;">
+      Note for build-out: the buttons above are placeholders. Taking a real payment — by card or through Koko's checkout — needs a small server-side component (an Azure Function works well) so that no payment or Koko API credentials are ever handled in this static page.
+    </p>
+  </div>
+</section>
+
+<section id="enroll">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Enrol</h2>
+      <p>Send your details and we'll confirm your seat and share the payment link.</p>
+    </div>
+    <div class="contact-grid" style="max-width:640px;">
+      <form action="#" method="post">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        <div class="field"><label for="course">Course</label><input id="course" name="course" type="text" placeholder="SC-300, SC-900, or Security Bootcamp"></div>
+        <button type="submit" class="btn btn-primary">Request enrolment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Moorish Academy — a Moorish Lanka (Pvt) Ltd initiative</span>
+    <span><a href="https://moorishlanka.com" style="color:var(--gold-soft);">moorishlanka.com</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
